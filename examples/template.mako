@@ -1,8 +1,8 @@
 <%def name="block_v4(action, cidrs)" filter="trim">
-    ${action} attribute next-hop ${ipv4} community [ 65142:666 no-export ] nlri ${" ".join(cidrs)}
+    ${action} attributes next-hop ${ipv4} community [ 65142:666 no-export ] nlri ${" ".join(cidrs)}
 </%def>
 <%def name="block_v6(action, cidrs)" filter="trim">
-    ${action} attribute next-hop ${ipv6} community [ 65142:666 no-export ] nlri ${" ".join(cidrs)}
+    ${action} attributes next-hop ${ipv6} community [ 65142:666 no-export ] nlri ${" ".join(cidrs)}
 </%def>
 <%def name="block(action, cidrs)" filter="trim">
 ## cidrs are grouped by v4 or v6. If one address is v4, they all are.
