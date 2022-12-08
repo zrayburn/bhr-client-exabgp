@@ -5,4 +5,4 @@ docker run -t -i --rm \
     -e BHR_HOST=http://localhost:8000 \
     -e BHR_TOKEN=foo \
     -e BHR_IDENT=bgp1 \
-    bhr-client-exabgp
+    bhr-client-exabgp:latest

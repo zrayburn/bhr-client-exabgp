@@ -6,4 +6,5 @@ echo "  BHR_TOKEN=${BHR_TOKEN:0:10}..."
 echo "  BHR_IDENT=${BHR_TEMPLATE}"
 
 bhr-client-exabgp-write-template > inject.cfg || exit 1
-exec /code/exabgp-3.4.26/sbin/exabgp inject.cfg
+/bin/bash
+#exec /code/exabgp-4.2.21/sbin/exabgp inject.cfg
